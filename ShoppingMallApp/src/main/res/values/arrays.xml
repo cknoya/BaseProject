@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_status">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>未审核</item>
+        <item>待发货</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="sort_type">
+        <item>综合</item>
+        <item>价格</item>
+    </string-array>
+    <string-array name="service_order_status">
+        <item>待接单</item>
+        <item>进行中</item>
+        <item>已完成</item>
+    </string-array>
+</resources>

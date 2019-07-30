@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword '0000xxy123456'
+            storeFile file('jxs.jks')
+            storePassword '0000xxy123456'
+        }
+    }
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    defaultConfig {
+        applicationId "com.yuxi.iot"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            signingConfig signingConfigs.config
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["support-design"]
+    implementation rootProject.ext.dependencies["support-v4"]
+    implementation rootProject.ext.dependencies["constraint"]
+    testImplementation rootProject.ext.dependencies["junit"]
+    implementation rootProject.ext.dependencies["okgo"]
+    implementation rootProject.ext.dependencies["okserver"]
+    implementation rootProject.ext.dependencies["gson"]
+    implementation rootProject.ext.dependencies["chuck"]
+    implementation rootProject.ext.dependencies["barlibrary"]
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    implementation rootProject.ext.dependencies["AndPermission"]
+    implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
+    implementation rootProject.ext.dependencies["multidex"]
+    implementation rootProject.ext.dependencies["glide"]
+    annotationProcessor rootProject.ext.dependencies["glide-compiler"]
+    implementation rootProject.ext.dependencies["avi"]
+    implementation rootProject.ext.dependencies["qianwen-update"]
+    implementation rootProject.ext.dependencies["gif"]
+    implementation rootProject.ext.dependencies["SmartRefreshLayout"]
+    implementation rootProject.ext.dependencies["SmartRefreshHeader"]
+    implementation rootProject.ext.dependencies["banner"]
+    implementation rootProject.ext.dependencies["BottomNavigationViewEx"]
+    implementation rootProject.ext.dependencies["badgeview"]
+    implementation rootProject.ext.dependencies["EasyPopup"]
+    implementation rootProject.ext.dependencies["recyclerview"]
+    implementation rootProject.ext.dependencies["EventBus"]
+    implementation rootProject.ext.dependencies["upyun-android-sdk"]
+    implementation rootProject.ext.dependencies["greendao"]
+    implementation rootProject.ext.dependencies["PictureSelector"]
+    implementation rootProject.ext.dependencies["immersionbar"]
+    implementation rootProject.ext.dependencies["PickerView"]
+    //友盟
+    implementation rootProject.ext.dependencies["huawei-basetb"]
+    implementation rootProject.ext.dependencies["huawei-pushtb"]
+    implementation rootProject.ext.dependencies["huawei-umengaccs"]
+    implementation rootProject.ext.dependencies["meizu-push"]
+    implementation rootProject.ext.dependencies["meizu-umengaccs"]
+    implementation rootProject.ext.dependencies["xiaomi-push"]
+    implementation rootProject.ext.dependencies["xiaomi-umengaccs"]
+    implementation rootProject.ext.dependencies["common"]
+    implementation rootProject.ext.dependencies["analytics"]
+    implementation rootProject.ext.dependencies["utdid"]
+    implementation rootProject.ext.dependencies["push"]
+    //微信sdk
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation project(':threadschedule')
+    implementation project(':imagebrowserlibrary')
+}

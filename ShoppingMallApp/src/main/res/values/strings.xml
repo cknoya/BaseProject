@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">昱熙VIP</string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+
+    <!-- 加载状态相关 -->
+    <string name="view_empty">没有数据~</string>
+    <string name="view_network_error">网络异常~</string>
+    <string name="view_no_network">没有网络~</string>
+
+    <string name="loading">加载中</string>
+    <string name="load_success">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="please_input">请输入</string>
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="desc_check_mark">check mark</string>
+    <string name="order_title">我的订单</string>
+    <string name="my_address_title">我的地址</string>
+</resources>

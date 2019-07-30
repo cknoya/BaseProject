@@ -1,0 +1,63 @@
+ext{
+    android = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 2,
+            versionName      : "1.0.1"
+    ]
+    dependencies = [
+            "appcompat-v7" : 'com.android.support:appcompat-v7:28.0.0',
+            "support-design" : 'com.android.support:design:28.0.0',
+            "support-v4" : 'com.android.support:support-v4:28.0.0',
+            "constraint" : 'com.android.support.constraint:constraint-layout:1.1.3',
+            "junit" : 'junit:junit:4.12',
+            "okgo" : 'com.lzy.net:okgo:3.0.4',
+            'okserver' : 'com.lzy.net:okserver:2.0.5',
+            "gson" : 'com.google.code.gson:gson:2.8.0',
+            "chuck" : 'com.readystatesoftware.chuck:library:1.0.4',
+            //沉侵式状态栏
+            "barlibrary" : 'com.gyf.immersionbar:immersionbar:3.0.0-beta05',
+            //黄油刀
+            "butterknife" : 'com.jakewharton:butterknife:8.8.1',
+            "butterknife-compiler" : 'com.jakewharton:butterknife-compiler:8.8.1',
+            //权限
+            "AndPermission" : 'com.yanzhenjie.permission:support:2.0.1' ,
+            "BaseRecyclerViewAdapterHelper" : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30',
+            "multidex" : 'com.android.support:multidex:1.0.0',
+            "glide" : 'com.github.bumptech.glide:glide:4.7.1',
+            "glide-compiler" : 'com.github.bumptech.glide:compiler:4.7.1',
+            //loading框
+            "avi" : 'com.wang.avi:library:2.1.3',
+            //版本更新
+            "qianwen-update" : 'com.qianwen:update-app:3.5.2',
+            //下拉刷新
+            "SmartRefreshLayout" : 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-20',
+            "SmartRefreshHeader" : 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-20',
+            "gif" : 'pl.droidsonroids.gif:android-gif-drawable:1.2.3',
+            "banner": 'com.youth.banner:banner:1.4.10',
+            "BottomNavigationViewEx": 'com.github.ittianyu:BottomNavigationViewEx:2.0.4',
+            "badgeview": 'q.rorbin:badgeview:1.1.0',
+            "EasyPopup": 'com.github.zyyoona7:EasyPopup:1.1.2',
+            "recyclerview": 'com.yanzhenjie.recyclerview:support:1.3.2',
+            "EventBus": 'org.greenrobot:eventbus:3.1.1',
+            //友盟
+            "huawei-basetb": 'com.umeng.umsdk:huawei-basetb:2.6.0.301',
+            "huawei-pushtb": 'com.umeng.umsdk:huawei-pushtb:2.6.0.301',
+            "huawei-umengaccs": 'com.umeng.umsdk:huawei-umengaccs:1.1.3',
+            "meizu-push": 'com.umeng.umsdk:meizu-push:3.8.1',
+            "meizu-umengaccs": 'com.umeng.umsdk:meizu-umengaccs:1.0.6',
+            "xiaomi-push": 'com.umeng.umsdk:xiaomi-push:3.6.9',
+            "xiaomi-umengaccs": 'com.umeng.umsdk:xiaomi-umengaccs:1.0.9',
+            "common": 'com.umeng.umsdk:common:1.5.4',
+            "analytics": 'com.umeng.sdk:analytics:7.5.0',
+            "utdid": 'com.umeng.umsdk:utdid:1.1.5.3',
+            "push": 'com.umeng.umsdk:push:5.0.2',
+            "upyun-android-sdk": 'com.upyun:upyun-android-sdk:2.0.7',
+            "greendao": 'org.greenrobot:greendao:3.2.2',
+            "PictureSelector": 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3',
+            "immersionbar": 'com.gyf.immersionbar:immersionbar-components:3.0.0-beta05',
+            "PickerView": 'com.contrarywind:Android-PickerView:4.1.8'
+
+    ]
+}
